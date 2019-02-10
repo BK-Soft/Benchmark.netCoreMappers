@@ -13,20 +13,24 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet=v0.11.3, OS=Windows 10.0.17763.292 (1809/October2018Update/Redstone5)
-Intel Core i7-7700HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
+BenchmarkDotNet=v0.11.3, OS=Windows 10.0.17134.523 (1803/April2018Update/Redstone4)
+Intel Core i7-6700HQ CPU 2.60GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
+Frequency=2531249 Hz, Resolution=395.0619 ns, Timer=TSC
 .NET Core SDK=2.2.103
-  [Host]     : .NET Core 2.2.1 (CoreCLR 4.6.27207.03, CoreFX 4.6.27207.03), 64bit RyuJIT
-  DefaultJob : .NET Core 2.2.1 (CoreCLR 4.6.27207.03, CoreFX 4.6.27207.03), 64bit RyuJIT
+  [Host] : .NET Core 2.2.1 (CoreCLR 4.6.27207.03, CoreFX 4.6.27207.03), 64bit RyuJIT
 </code></pre>
-<pre><code></code></pre>
+<pre><code>Job=InProcess  Toolchain=InProcessToolchain  
+</code></pre>
 
 <table>
-<thead><tr><th>     Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+<thead><tr><th>        Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
 </tr>
-</thead><tbody><tr><td>MapWithTinyMapper</td><td>5,201.5 ns</td><td>52.29 ns</td><td>48.92 ns</td>
-</tr><tr><td>MapWithAutoMapper</td><td>2,347.1 ns</td><td>52.44 ns</td><td>151.30 ns</td>
-</tr><tr><td>MapWithMapster</td><td>654.2 ns</td><td>23.55 ns</td><td>67.95 ns</td>
+</thead><tbody><tr><td>MapWithAgileMapper</td><td>2,006.0 ns</td><td>47.26 ns</td><td>134.08 ns</td>
+</tr><tr><td>MapWithTinyMapper</td><td>5,514.2 ns</td><td>29.57 ns</td><td>27.66 ns</td>
+</tr><tr><td>MapWithExpressMapper</td><td>4,186.7 ns</td><td>91.35 ns</td><td>105.20 ns</td>
+</tr><tr><td>MapWithAutoMapper</td><td>2,223.7 ns</td><td>44.21 ns</td><td>52.63 ns</td>
+</tr><tr><td>MapWithManualMapping</td><td>1,193.1 ns</td><td>23.75 ns</td><td>52.62 ns</td>
+</tr><tr><td>MapWithMapster</td><td>544.8 ns</td><td>11.33 ns</td><td>25.10 ns</td>
 </tr></tbody></table>
 </body>
 </html>

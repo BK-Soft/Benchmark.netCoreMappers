@@ -1,4 +1,4 @@
-﻿# 🥇 Object Mappers Benchmark 
+﻿# 🥇 .NET Object Mappers Benchmark 
 
 ## Comparison between
 - [AutoMapper](https://github.com/AutoMapper/AutoMapper) : A convention-based object-object mapper in .NET - [website](http://automapper.org/)
@@ -15,5 +15,5 @@ dotnet run --configuration Release
 ```
 
 ## Result
-**TIPS** : AgileMapper mean time was different (about 1,900 or 15,000 ns) in several times!
+**Tip** : AgileMapper mean time was different (about 1,900 or 15,000 ns) in several times!
 ![Benchmark](https://raw.githubusercontent.com/mjebrahimi/Benchmark.netCoreMappers/master/benchmark.png)

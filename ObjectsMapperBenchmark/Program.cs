@@ -9,7 +9,6 @@ namespace ObjectsMapperBenchmark
         {
             var res = BenchmarkRunner.Run<BenchmarkContainer>();
             Console.ReadLine();
-            
         }
     }
 }

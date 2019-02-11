@@ -1,16 +1,19 @@
 ``` ini
 
-BenchmarkDotNet=v0.10.10, OS=Windows 10 Redstone 3 [1709, Fall Creators Update] (10.0.16299.19)
-Processor=Intel Core i7-6500U CPU 2.50GHz (Skylake), ProcessorCount=4
-Frequency=2531250 Hz, Resolution=395.0617 ns, Timer=TSC
-.NET Core SDK=2.1.1-preview-007094
-  [Host]     : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT  [AttachedDebugger]
-  DefaultJob : .NET Core 2.0.0 (Framework 4.6.00001.0), 64bit RyuJIT
+BenchmarkDotNet=v0.11.3, OS=Windows 10.0.17134.523 (1803/April2018Update/Redstone4)
+Intel Core i7-6700HQ CPU 2.60GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
+Frequency=2531249 Hz, Resolution=395.0619 ns, Timer=TSC
+.NET Core SDK=2.2.103
+  [Host] : .NET Core 2.2.1 (CoreCLR 4.6.27207.03, CoreFX 4.6.27207.03), 64bit RyuJIT
 
+Job=InProcess  Toolchain=InProcessToolchain  
 
 ```
-|            Method |       Mean |     Error |    StdDev |     Median |
-|------------------ |-----------:|----------:|----------:|-----------:|
-| MapWithTinyMapper | 6,650.0 ns | 144.03 ns | 408.59 ns | 6,521.9 ns |
-| MapWithAutoMapper | 2,102.1 ns |  55.99 ns | 162.43 ns | 2,027.7 ns |
-|    MapWithMapster |   651.7 ns |  24.38 ns |  68.36 ns |   635.5 ns |
+|               Method |       Mean |    Error |    StdDev |
+|--------------------- |-----------:|---------:|----------:|
+|   MapWithAgileMapper | 2,006.0 ns | 47.26 ns | 134.08 ns |
+|    MapWithTinyMapper | 5,514.2 ns | 29.57 ns |  27.66 ns |
+| MapWithExpressMapper | 4,186.7 ns | 91.35 ns | 105.20 ns |
+|    MapWithAutoMapper | 2,223.7 ns | 44.21 ns |  52.63 ns |
+| MapWithManualMapping | 1,193.1 ns | 23.75 ns |  52.62 ns |
+|       MapWithMapster |   544.8 ns | 11.33 ns |  25.10 ns |
